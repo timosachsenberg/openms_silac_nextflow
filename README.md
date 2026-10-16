@@ -205,6 +205,7 @@ Defaults come from [nextflow.config](nextflow.config) and
 | Parameter | Default | Meaning |
 | --- | --- | --- |
 | `--psm_fdr` | `0.01` | PercolatorAdapter FDR option |
+| `--percolator_subset_max_train` | `300000` | PSMs Percolator trains its SVM on; the rest are scored with the trained weights (`0` = all) |
 | `--allowed_missed_cleavages` | `2` | Comet missed cleavages; also feeds the MS1 labeled-residue setting |
 | `--protein_level_fdr_cutoff` | `0.01` | MS1 protein FDR cutoff |
 | `--silac_picked_protein_fdr` | `true` | Picked protein FDR option |

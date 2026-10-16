@@ -22,6 +22,7 @@ process PERCOLATOR {
         -percolator_executable percolator \
         -score_type pep \
         -score:fdr ${params.psm_fdr} \
+        -subset_max_train ${params.percolator_subset_max_train} \
         -threads ${task.cpus}
     """
 }
